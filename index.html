@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoLux</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="favicons/favicon.png">
+    </head>
+<body>
+        <!-- Навігація -->
+        <header class="header">
+            <header>
+                <nav class="navbar">
+                    
+                    <div class="logo-container">
+                        <img src="logo.png" alt="AutoLux Logo" class="logo">
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#about">Про нас</a></li>
+                        <li><a href="catalog.html">Автомобілі</a></li>
+                        <li><a href="login.html">Увійти</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </nav>
+                <!-- Слайдер -->
+                <div class="slider">
+                    <div class="slides">
+                    <!-- Картки слайдера -->
+                    <div class="slide"><img src="images/cars1.jpg" alt="Машина 1"></div>
+                    <div class="slide"><img src="images/cars2.jpg" alt="Машина 2"></div>
+                    <div class="slide"><img src="images/cars3.jpg" alt="Машина 3"></div>
+                    </div>
+        <!-- Кнопки для навігації -->
+        <button class="nav-btn prev-btn">❮</button>
+        <button class="nav-btn next-btn">❯</button>
+        <!-- Індикатори -->
+        <div class="indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+        </div>
+    </div>
+    
+    <section class="special-offers">
+        <h2>Спецпропозиції</h2>
+    
+        <div class="offer-grid">
+            <!-- Пропозиція 1 -->
+            <div class="offer-item">
+                <div class="offer-ribbon">Акція</div>
+                <img src="images/SUZUKIJIMNY.png" alt="Kia Niro">
+                <h3>Знижка до 3 500 євро на Kia Niro!</h3>
+                <p class="offer-price">Ціна: <span class="old-price">35 000 €</span> <span class="new-price">31 500 €</span></p>
+                <a href="#" class="btn">Дізнатися більше</a>
+            </div>
+    
+            <!-- Пропозиція 2 -->
+            <div class="offer-item">
+                <div class="offer-ribbon">Акція</div>
+                <img src="images/TOYOTAHILUX.png" alt="Skoda Scala">
+                <h3>Суперпропозиція на Skoda Scala!</h3>
+                <p class="offer-price">Ціна: <span class="old-price">850 000 ГРН</span> <span class="new-price">800 000 ГРН</span></p>
+                <a href="#" class="btn">Дізнатися більше</a>
+            </div>
+    
+            <!-- Пропозиція 3 -->
+            <div class="offer-item special-offer">
+                <div class="offer-ribbon">Акція</div>
+                <img src="images/LEXUSLBX.png" alt="Skoda Octavia">
+                <h3>Шалена знижка на Skoda Octavia!</h3>
+                <p class="offer-price">Ціна: <span class="old-price">950 000 ГРН</span> <span class="new-price">900 000 ГРН</span></p>
+                <a href="#" class="btn">Дізнатися більше</a>
+            </div>
+            <!-- Пропозиція 4 -->
+        <div class="offer-item special-offer">
+            <div class="offer-ribbon">Акція</div>
+            <img src="images/TOYOTACOROLLA.png" alt="Toyota RAV4">
+            <h3>Toyota RAV4 - Знижка на популярний кросовер!</h3>
+            <p class="offer-price">Ціна: <span class="old-price">1 100 000 ГРН</span> <span class="new-price">1 050 000 ГРН</span></p>
+            <button class="btn" onclick="openModal('toyota-rav4')">Дізнатися більше</button>
+        </div>
+        <!-- Модальне вікно -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <img id="modal-image" src="" alt="Авто" class="modal-image">
+        <ul id="modal-features"></ul>
+        <button class="btn" onclick="closeModal()">Закрити</button>
+    </div>
+</div>
+
+    </section>
+    
+    <script src="script.js"></script>
+        <footer>
+            <p>© 2024 AutoLux. Усі права захищено.</p>
+        </footer>
+    </body>
+    </html>
+    

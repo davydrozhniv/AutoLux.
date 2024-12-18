@@ -1,0 +1,1292 @@
+/* Основні стилі */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    to right,
+    #000000,
+    #4b3621
+  ); /* Коричневий плавно переходить у чорний */
+
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.nav-links li {
+  margin-left: 20px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #ffcc00;
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: #f4f4f4;
+}
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 1440px;
+}
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: #ffcc00;
+}
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+.catalog .car-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.car-item {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+.car-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+/* Стилі для всіх сторінок */
+body *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Задній фон */
+header {
+  background-color: rgb(#333);
+  color: white;
+  padding: 0px 0px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px; /* Відстань між кнопками */
+  margin: 2px;
+  padding: 20px;
+}
+.nav-links li {
+  margin: 0px;
+}
+.nav-links a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #f8f5f3; /* Біла обводка */
+  border-radius: 5px;
+  text-decoration: none;
+  color: #f8f5f3; /* Білий текст */
+  font-weight: bold;
+  text-transform: uppercase; /* Великі літери */
+  background-color: transparent; /* Прозорий фон */
+  transition: all 0.3s ease-in-out;
+}
+.nav-links a:hover {
+  background-color: #f8f5f3; /* Заливка фоном */
+  color: #2f1f1f; /* Темний текст */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тінь при наведенні */
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: #f4f4f4;
+}
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.btn:hover {
+  background-color: #ffcc00;
+}
+/* Усі права захищені */
+footer {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    to right,
+    #000000,
+    #4b3621
+  ); /* Коричневий плавно переходить у чорний */
+  color: white;
+  padding: 50px 0; /* Відступи тільки зверху та знизу */
+  text-align: center;
+  position: relative; /* Забезпечує, що footer розташований у межах сторінки */
+  left: 109; /* Забирає зміщення зліва */
+  width: 100; /* Займає всю ширину вікна */
+  margin: 0; /* Прибирає зовнішні відступи */
+}
+
+/* Загальний стиль для шапки */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333; /* Темний фон */
+  padding: 10px 20px; /* Відступи */
+  color: white; /* Білий текст */
+  
+}
+
+/* Логотип */
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 30px; /* Відступ від кнопок */
+}
+
+.logo {
+  width: 140px; /* Розмір логотипу */
+  height: auto; /* Зберігає пропорції */
+  margin-right: auto; /* Відступ від кнопок */
+}
+
+/* Навігаційне меню */
+.navbar {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+  
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Проміжки між пунктами меню */
+  margin: 0;
+  padding: 0;
+  
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+/* Загальні стилі */
+body,
+html {
+  
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+/* Контейнер слайдера */
+.slider {
+  position: relative;
+  width: 100%; /* На всю ширину сторінки */
+
+  margin: 0 auto; /* Центрувати слайдер */
+  overflow: hidden; /* Приховати зображення, що виходять за межі контейнера */
+  padding-bottom: 0px; /* Відступ від контейнера */
+  margin-bottom: 0px;
+  display: flex;
+}
+
+
+
+/* Список слайдів */
+.slides {
+  display: flex; /* Горизонтальне розташування */
+  transition: transform 0.5s ease-in-out; /* Анімація при зміні позиції */
+}
+
+/* Кожен слайд */
+.slide {
+  flex: 0 0 100%; /* Кожен слайд займає 100% ширини контейнера */
+  text-align: center;
+}
+
+/* Зображення */
+.slide img {
+  width: 100%; /* Зображення на всю ширину слайда */
+  height: auto; /* Збереження пропорцій */
+}
+/* Слайдер */
+.slider {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 20%; /* Три слайди по 100% кожен */
+}
+
+.slide {
+  min-width: 100vw;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Кнопки для слайдера */
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.124);
+  color: rgba(255, 255, 255, 0.602);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  
+  padding: 50px 6px;
+}
+
+.prev-btn {
+  left: 1px;
+}
+
+.next-btn {
+  right: 18px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(188, 60, 60, 0.448);
+}
+
+/* Індикатори */
+.indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: white;
+}
+
+
+/* Меню */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: rgba(241, 146, 64, 0.2);
+  color: white;
+}
+
+.nav-links a.active {
+  background-color: rgb(255, 0, 0);
+  color: black;
+}
+.contact-header {
+  background: linear-gradient(to bottom, #4b3621, #000000);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.contact-content {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+}
+
+.contact-map .map-container {
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  background: #000000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Основні стилі */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f5f5f5; /* Світлий фон для контрасту */
+}
+
+/* Заголовок */
+header {
+color: #ffffff;
+text-align: center;
+}
+
+.footer-contacts {
+  background-color: #f8f8f8; /* Світлий фон для нижньої секції */
+  padding: 30px 15px;
+}
+
+.footer-contacts .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-contacts .row {
+  display: flex;
+  justify-content: space-between; /* Розподіл між стовпчиками */
+  flex-wrap: wrap; /* Відображення на менших екранах */
+}
+
+.footer-contacts .column {
+  flex: 1; /* Рівні пропорції для колонок */
+  min-width: 250px; /* Мінімальна ширина для кожного стовпця */
+  margin: 10px;
+}
+
+.footer-contacts h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer-contacts p,
+.footer-contacts li {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.footer-contacts ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-contacts li {
+  margin-bottom: 5px;
+}
+
+.footer-contacts a {
+  text-decoration: none;
+  color: #007bff; /* Синій текст для посилань */
+}
+
+.footer-contacts a:hover {
+  color: #0056b3; /* Темно-синій при наведенні */
+}
+
+
+
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  color: black;
+  margin-right: 35px;
+}
+
+.count {
+  font-size: 30px;
+  color: gray;
+}
+
+.number {
+  font-size: 30px;
+  font-weight: bold;
+  color: gray;
+}
+
+.breadcrumb {
+  text-align: left;
+  justify-content: flex-start;
+  align-items: left;
+  margin: 2px 35px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: gray;
+}
+
+.breadcrumb-link {
+  text-decoration: none;
+  color: rgb(223, 0, 0);
+
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+  color: black;
+  font-size: 20px;
+
+}
+
+.breadcrumb-separator {
+  font-size: 20px;
+  color: #666;
+  
+}
+
+/* Картка кожного автомобіля */
+.model-card {
+  width: 250px; 
+  text-align: center; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  padding: 10px; 
+  background-color: #fff; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease; 
+}
+
+.model-card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+/* Зображення автомобіля */
+.model-card img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 5px; 
+}
+
+/* Назва автомобіля */
+.model-card h3 {
+  font-size: 1.2rem; 
+  margin-top: 10px; 
+  color: #333; 
+  font-weight: bold;
+}
+
+/* Ціна автомобіля */
+.model-card p.car-price {
+  font-size: 1rem; 
+  margin-top: 5px; 
+  color: #333; 
+}
+
+.model-card p.car-price span {
+  color: green; 
+  font-weight: bold; 
+  font-size: 1.1rem;
+}
+
+/* Другий ряд авто */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.models-grid {
+  display: flex;
+  gap: 20px;
+}
+.model-card {
+  width: -350px;
+  text-align: center;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.model-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.model-card h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.model-card p.car-price {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #333;
+}
+
+.model-card p.car-price span {
+  color: green;
+  font-weight: bold;
+}
+
+.details-popup {
+  position: fixed;
+  top: 20%;
+  right: -350px; /* Вікно сховано за екраном */
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ee0000;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.details-popup.active {
+  right: 20px; /* Вікно з’являється праворуч */
+}
+
+.popup-content {
+  text-align: left;
+}
+
+.popup-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.popup-content p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+/* Третій ряд авто */
+.models-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.model-card {
+  width: 250px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.model-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.model-card h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.model-card p.car-price {
+  font-size: 1rem;
+  margin-top: 5px;
+  color: #333;
+}
+
+.model-card p.car-price span {
+  color: green;
+  font-weight: bold;
+}
+
+.details-popup {
+  position: fixed;
+  top: 20%;
+  right: -350px; /* Вікно сховано за екраном */
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.details-popup.active {
+  right: 20px; /* Вікно показується на екрані */
+}
+
+.popup-content {
+  text-align: left;
+}
+
+.popup-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.popup-content p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+/* Четвертий ряд авто */
+.models-grid {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: space-between; 
+}
+
+.model-card {
+  width: 250px; 
+  text-align: center; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  padding: 10px; 
+  background-color: #fff; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease; 
+}
+
+.model-card img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 5px; 
+}
+
+.model-card h3 {
+  font-size: 1.2rem; 
+  margin-top: 10px; 
+}
+
+.model-card p.car-price {
+  font-size: 1rem; 
+  margin-top: 5px; 
+  color: #333; 
+}
+
+.model-card p.car-price span {
+  color: green; 
+  font-weight: bold; 
+}
+/* Контейнер для всіх карток */
+.models-grid {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+  justify-content: space-between; 
+}
+
+.model-card {
+  width: 250px; 
+  text-align: center; 
+  border: 1px solid #ddd; 
+  border-radius: 5px; 
+  padding: 10px; 
+  background-color: #fff; 
+  position: relative; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease; 
+}
+
+.model-card:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.model-card img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 5px; 
+}
+
+.model-card h3 {
+  font-size: 1.2rem; 
+  margin-top: 10px; 
+  color: #333; 
+  font-weight: bold;
+}
+
+.model-card p.car-price {
+  font-size: 1rem; 
+  margin-top: 5px; 
+  color: #333; 
+}
+
+.model-card p.car-price span {
+  color: green; 
+  font-weight: bold; 
+}
+
+/* Сердечко для додавання в обрані */
+.favorite-icon {
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
+  font-size: 24px; 
+  color: #aaa; 
+  cursor: pointer; 
+  transition: color 0.3s ease; 
+}
+
+.favorite-icon.active {
+  color: rgb(0, 0, 0); 
+}
+
+.favorite-icon:hover {
+  color: rgb(0, 38, 255); 
+}
+
+/* Спливаюче вікно для авторизації */
+.auth-popup {
+  display: none; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1000; 
+}
+
+.auth-popup-content {
+  background-color: #fff; 
+  padding: 20px; 
+  border-radius: 10px; 
+  max-width: 400px; 
+  margin: 20% auto; 
+  text-align: center; 
+}
+
+.auth-popup p {
+  margin-bottom: 15px; 
+}
+
+.auth-btn {
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+.auth-btn-ok {
+  background-color: #00ff2a; 
+  color: white; 
+}
+
+.auth-btn-cancel {
+  background-color: #aaa; 
+  color: white; 
+  margin-left: 10px; 
+}
+
+/* Основні стилі */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+}
+/* стилі для login */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('images/login-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+  animation: slideIn 0.6s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input-group input:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+}
+/* Стилі для registration */
+.registration-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('images/registration-bg.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.registration-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+  animation: slideIn 0.6s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input-group input:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.register-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #0056b3;
+}
+
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.success-message {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.success-message p {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  margin: 20% auto;
+}
+
+.success-message button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 20px auto;
+}
+
+
+/* Кнопки навігації */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 3rem; /* Розмір стрілки */
+  font-weight: bold;
+  color: #007BFF; /* Колір стрілки */
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.prev-btn {
+  left: 10px; /* Розташування кнопки зліва */
+}
+
+.next-btn {
+  right: 10px; /* Розташування кнопки справа */
+}
+
+/* Ефект при наведенні */
+.nav-btn:hover {
+  color: #0056b3;
+  transform: scale(1.2); /* Збільшення при наведенні */
+}
+
+.nav-btn:active {
+  transform: scale(0.95); /* Зменшення при натисканні */
+}
+/* Основний стиль для секції 1 */
+.special-offers {
+  padding: 50px 20px;
+  background: linear-gradient(120deg, #f4f4f9, #e0e0e0);
+  text-align: center;
+}
+
+.special-offers h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.offer-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.offer-item {
+  width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.offer-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.offer-item img {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.offer-item h3 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.offer-price {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.new-price {
+  color: #3fe639;
+  font-weight: bold;
+}
+
+.offer-ribbon {
+
+
+  left: 20px;
+  background-color: #e63946;
+  color: white;
+  padding: 2px 7px;
+  font-weight: bold;
+
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Стрічка "Акція" */
+.offer-ribbon {
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  background: linear-gradient(135deg, #e63946, #ff5757);
+  color: #fff;
+  padding: 5px 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transform: rotate(-45deg);
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: rotate(-45deg) scale(1); }
+  50% { transform: rotate(-45deg) scale(1.1); }
+  100% { transform: rotate(-45deg) scale(1); }
+}
+/* Загальні стилі для модального вікна */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0; 
+  top: 0; 
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 60%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #e63946;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.modal-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-content ul li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.modal-content .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.modal-content .btn:hover {
+  background-color: #0056b3;
+}
