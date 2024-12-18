@@ -1,0 +1,54 @@
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <!-- Логотип -->
+            <div class="logo-container">
+                <img src="logo.png" alt="AutoLux Logo" class="logo">
+            </div>
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="login.html">Вхід/Реєстрація</a></li>
+                        <li><a href="contacts.html">Контакти</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h1>Підбір транспорту</h1>
+        <p>Виберіть категорії та характеристики для пошуку автомобіля, що відповідає вашим потребам.</p>
+    </header>
+    <main class="filter-container">
+        <!-- Фільтри -->
+        <section class="filters">
+            <h2>Фільтри</h2>
+            
+            <!-- Тип кузова -->
+            <div class="filter-group">
+                <h3>Тип кузова</h3>
+                <label><input type="checkbox" value="Седан"> Седан</label>
+                <label><input type="checkbox" value="Кросовер"> Кросовер</label>
+                <label><input type="checkbox" value="Хетчбек"> Хетчбек</label>
+            </div>
+            
+            <!-- Діапазон цін -->
+            <div class="filter-group">
+                <h3>Діапазон цін</h3>
+                <label>Від: <input type="number" placeholder="500000" id="price-min"></label>
+                <label>До: <input type="number" placeholder="2000000" id="price-max"></label>
+            </div>
+            
+            <!-- Тип палива -->
+            <div class="filter-group">
+                <h3>Тип палива</h3>
+                <label><input type="radio" name="fuel" value="Бензин"> Бензин</label>
+                <label><input type="radio" name="fuel" value="Дизель"> Дизель</label>
+                <label><input type="radio" name="fuel" value="Електро"> Електро</label>
+            </div>
+            
+            <!-- Кнопка застосування -->
+            <button class="filter-btn" onclick="applyFilters()">Знайти авто</button>
+        </section>
+    </main>
+</body>
+</html>

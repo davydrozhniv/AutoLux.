@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог автомобілів</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="favicons/favicon.png">
+</head>
+<body>
+        <header class="site-header">
+<!-- Логотип -->
+    <div class="logo-container">
+        <img src="logo.png" alt="AutoLux Logo" class="logo">
+    </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="login.html">Вхід/Реєстрація</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="breadcrumb">
+        <a href="selection.html" class="breadcrumb-link">AUTOLUX</a>
+        <span class="breadcrumb-separator">❯</span>
+        <span class="breadcrumb-current">МАЛОЛІТРАЖНІ АВТОМОБІЛІ</span>
+    </section>
+    <section class="car-section">
+        <section class="header-text">
+            <span class="title">Малолітражні автомобілі</span>
+            <span class="count">відібрано <span class="number">16</span> пропозицій</span>
+        </section>
+        <!-- Картки автомобілів -->
+    </section>
+    <section class="car-section">
+        <div class="models-grid">
+            <div class="model-card" onmouseover="showDetails(this)" onmouseout="hideDetails()">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">
+                ❤️
+            </div>
+                <h3>TOYOTA LIVE</h3>
+                <img src="images/TOYOTACOROLLA.png" alt="Toyota Corolla">
+                <div class="rating">
+                    <span class="review-count">Новий автомобіль</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star-half">&#9734;</span>
+                </div>
+                <p class="car-price">Ціна: <span>974 000 ГРН</span></p>
+            </div>
+            <div class="model-card" onmouseover="showDetails(this)" onmouseout="hideDetails()">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">
+                ❤️
+            </div>
+                <h3>OPEL CROSS</h3>
+                <img src="images/OpelCrossland.png" alt="Opel Crossland">
+                <div class="rating">
+                    <span class="review-count">Новий автомобіль</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star-half">&#9734;</span>
+                    <span class="star-half">&#9734;</span>
+                </div>
+                <p class="car-price">Ціна: <span>825 400 грн</span></p>
+            </div>
+            <div class="model-card" onmouseover="showDetails(this)" onmouseout="hideDetails()">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">
+                    ❤️
+                </div>
+                <h3>TOYOTA YARIS</h3>
+                <img src="images/TOYOTAYARISCROSS.png" alt="TOYOTA YARIS CROSS">
+                <div class="rating">
+                    <span class="review-count">Новий автомобіль</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star-half">&#9734;</span>
+                    <span class="star-half">&#9734;</span>
+                </div>
+                <p class="car-price">Ціна: <span>1 034 185 грн</span></p>
+            </div>
+            <div class="model-card" onmouseover="showDetails(this)" onmouseout="hideDetails()">
+                <div class="favorite-icon" onclick="toggleFavorite(this)">
+                ❤️
+            </div>
+                <h3>SUZUKI NEW SX</h3>
+                <img src="images/SUZUKINEWSX.png" alt="SUZUKI NEW SX">
+                <div class="rating">
+                    <span class="review-count">Новий автомобіль</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+                <p class="car-price">Ціна: <span>941 000 ГРН</span></p>
+            </div>
+        </section>
+    <section class="models-grid">
+        <div class="model-card" onmouseover="showDetails(this)" onmouseout="hideDetails()">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">
+                ❤️
+            </div>
+            <h3>SUZUKI JIMNY</h3>
+            <img src="images/SUZUKIJIMNY.png" alt="SUZUKI JIMNY">
+            <span class="review-count">Новий автомобіль</span>
+            <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+            <p class="car-price">Ціна: <span>937 000 ГРН</span></p>
+        </div>
+        <div class="model-card" onmouseover="showDetails(this)" onmouseout="hideDetails()">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">
+                ❤️
+            </div>
+            <h3>MG ONE</h3>
+            <img src="images/MGONE.png" alt="MG ONE">
+            <span class="review-count">Новий автомобіль</span>
+            <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+            <p class="car-price">Ціна: <span>952 936 ГРН</span></p>
+        </div>
+        <div class="model-card" onmouseover="showDetails(this)" onmouseout="hideDetails()">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">
+                ❤️
+            </div>
+            <h3>OPEL GRAND</h3>
+            <img src="images/OPELGRANDLAND.png" alt="OPELG RAND LAND">
+            <span class="review-count">Новий автомобіль</span>
+            <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+            <p class="car-price">Ціна: <span>1 128 900 ГРН</span></p>
+        </div>
+        <div class="model-card" onmouseover="showDetails(this)" onmouseout="hideDetails()">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">
+                ❤️
+            </div>
+            <h3>TOYOTA HILUX</h3>
+            <img src="images/TOYOTAHILUX.png" alt="TOYOTA HILUX">
+            <span class="review-count">Новий автомобіль</span>
+            <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+            <p class="car-price">Ціна: <span>1 588 020 ГРН</span></p>
+        </div>
+    </section>
+        <!-- CITROEN C5 -->
+        <section class="models-grid">
+        <div class="model-card" onmouseover="showDetails(this)" onmouseout="hideDetails()">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">
+                ❤️
+            </div>
+            <h3>CITROEN C5</h3>
+            <img src="images/CITROENC5.jpeg" alt="CITROEN C5">
+                    <span class="review-count">Новий автомобіль</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star-half">&#9734;</span>
+                    <p class="car-price">Ціна: <span>1 034 185 грн</span></p>
+                </div>
+        </div>
+    
+        <!-- LEXUS LBX -->
+        <div class="model-card" onmouseover="showDetails(this)" onmouseout="hideDetails()">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">
+                ❤️
+            </div>
+            <h3>LEXUS LBX</h3>
+            <img src="images/LEXUSLBX.png" alt="LEXUS LBX">
+            <span class="review-count">Новий автомобіль</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <p class="car-price">Ціна: <span>970 000 ГРН</span></p>
+        </div>
+    
+        <!-- OPEL ASTRA -->
+        <div class="model-card" onmouseover="showDetails(this)" onmouseout="hideDetails()">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">
+                ❤️
+            </div>
+            <h3>OPEL ASTRA</h3>
+            <img src="images/OPELASTRA.png" alt="OPEL ASTRA">
+            <span class="review-count">Новий автомобіль</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star-half">&#9734;</span>
+            <p class="car-price">Ціна: <span>1 039 800 ГРН</span></p>
+        </div>
+    
+        <!-- SUZUKI VITARA -->
+        <div class="model-card" onmouseover="showDetails(this)" onmouseout="hideDetails()">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">
+                ❤️
+            </div>
+            <h3>SUZUKI VITARA</h3>
+            <img src="images/SUZUKIVITARA.png" alt="SUZUKI VITARA">
+            <span class="review-count">Новий автомобіль</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star-half">&#9734;</span>
+            <p class="car-price">Ціна: <span>960 000 ГРН</span></p>
+        </div>
+    </section>
+        <!-- PEUGEOT E-2008 -->
+    <section class="models-grid">
+        <div class="model-card" onmouseover="showDetails(this)" onmouseout="hideDetails()">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">
+                ❤️
+            </div>
+            <h3>PEUGEOT E-2008</h3>
+            <img src="images/PEUGEOTE2008.jpeg" alt="PEUGEOT E-2008">
+            <span class="review-count">Новий автомобіль</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star-half">&#9734;</span>
+            <p class="car-price">Ціна: <span>1 020 600 ГРН</span></p>
+        </div>
+    
+        <!-- PEUGEOT CREWCAB -->
+        <div class="model-card" onmouseover="showDetails(this)" onmouseout="hideDetails()">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">
+                ❤️
+            </div>
+            <h3>PEUGEOT CAB</h3>
+            <img src="images/PEUGEOTCREWCAB.jpeg" alt="PEUGEOT CREWCAB">
+            <span class="review-count">Новий автомобіль</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <p class="car-price">Ціна: <span>1 058 700 ГРН</span></p>
+        </div>
+    
+        <!-- TOYOTA YARIS -->
+        <div class="model-card" onmouseover="showDetails(this)" onmouseout="hideDetails()">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">
+                ❤️
+            </div>
+            <h3>TOYOTA YARIS</h3>
+            <img src="images/TOYOTAYARIS.png" alt="TOYOTA YARIS">
+            <span class="review-count">Новий автомобіль</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <p class="car-price">Ціна: <span>1 041 520 ГРН</span></p>
+        </div>
+    
+        <!-- CITROEN BERLINGO -->
+        <div class="model-card" onmouseover="showDetails(this)" onmouseout="hideDetails()">
+            <div class="favorite-icon" onclick="toggleFavorite(this)">
+                ❤️
+            </div>
+            <h3>CITROEN CREW</h3>
+            <img src="images/CITROENBERLINGO.jpeg" alt="CITROEN BERLINGO">
+            <span class="review-count">Новий автомобіль</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <p class="car-price">Ціна: <span>1 058 700 ГРН</span></p>
+        </div>
+    </section>
+
+<!-- Спливаюче вікно для авторизації -->
+<div id="auth-popup" class="auth-popup">
+    <div class="auth-popup-content">
+        <p>Необхідно авторизуватися</p>
+        <p>Тільки авторизовані користувачі можуть зберігати товари. Будь ласка, авторизуйтесь.</p>
+        <button onclick="redirectToLogin()" class="auth-btn auth-btn-ok">OK</button>
+        <button onclick="closePopup()" class="auth-btn auth-btn-cancel">Скасувати</button>
+    </div>
+</div>
+        <section class="footer-contacts">
+                <div class="row">
+                    <!-- Контакти -->
+                    <div class="column">
+                    <h3>Контакти</h3>
+                    <p>Альянс-А — офіційний дилер AutoLux в Івано-Франківську та області.</p>
+                    <p>Адреса відділу продажу: <br> Калуське шосе, 2 К</p>
+                    <p>Телефон: ☎️ 0800330980</p>
+                    <p><a href="#">Карта проїзду</a></p>
+                    </div>
+                    <!-- Автомобілі -->
+                    <div class="column">
+                    <h3>Автомобілі</h3>
+                    <ul>
+                        <li><a href="#">Qashqai</a></li>
+                        <li><a href="#">X-Trail</a></li>
+                        <li><a href="#">Juke</a></li>
+                        <li><a href="#">Leaf</a></li>
+                    </ul>
+                    </div>
+                    <!-- Інше -->
+                    <div class="column">
+                    <h3>Інше</h3>
+                    <ul>
+                        <li><a href="#">Власникам Nissan</a></li>
+                        <li><a href="#">Майбутнім покупцям</a></li>
+                        <li><a href="#">Отримати консультацію</a></li>
+                        <li><a href="#">Запис на ТО</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Вікно з інформацією для авто -->
+<div class="details-popup" id="details-popup">
+    <div class="popup-content">
+        <h2 id="popup-title">Назва авто</h2>
+        <p id="popup-description">Опис авто</p>
+        <p id="popup-price">Ціна</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
